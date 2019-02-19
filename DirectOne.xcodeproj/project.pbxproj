@@ -1,0 +1,592 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		54DF285F82086DFB40E1D747 /* Pods_DirectOne.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD3B4AFE4D9E53421EEAD8BA /* Pods_DirectOne.framework */; };
+		F43E97DD221B1B20001B9EF9 /* UnitConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43E97DC221B1B20001B9EF9 /* UnitConverter.swift */; };
+		F45C53662218257F001C1152 /* PlaceSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45C53652218257F001C1152 /* PlaceSearch.swift */; };
+		F4EA00D92216BF60006485FA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4EA00D82216BF60006485FA /* AppDelegate.swift */; };
+		F4EA00DB2216BF60006485FA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4EA00DA2216BF60006485FA /* ViewController.swift */; };
+		F4EA00DE2216BF60006485FA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4EA00DC2216BF60006485FA /* Main.storyboard */; };
+		F4EA00E02216BF61006485FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4EA00DF2216BF61006485FA /* Assets.xcassets */; };
+		F4EA00E32216BF61006485FA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4EA00E12216BF61006485FA /* LaunchScreen.storyboard */; };
+		F4EA01232216EA61006485FA /* libGeographic.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F4EA01222216EA61006485FA /* libGeographic.a */; };
+		F4EA01622216EBD0006485FA /* GetDistance.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F4EA01602216EBD0006485FA /* GetDistance.cpp */; };
+		F4EA01672216F3B0006485FA /* GetDistance.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4EA01662216F3B0006485FA /* GetDistance.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A47DB8ADAE6B36022A638DB9 /* Pods-DirectOne.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DirectOne.release.xcconfig"; path = "Pods/Target Support Files/Pods-DirectOne/Pods-DirectOne.release.xcconfig"; sourceTree = "<group>"; };
+		AD3B4AFE4D9E53421EEAD8BA /* Pods_DirectOne.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DirectOne.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F43E97DC221B1B20001B9EF9 /* UnitConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitConverter.swift; sourceTree = "<group>"; };
+		F45C53652218257F001C1152 /* PlaceSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceSearch.swift; sourceTree = "<group>"; };
+		F4EA00D52216BF60006485FA /* DirectOne.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DirectOne.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4EA00D82216BF60006485FA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F4EA00DA2216BF60006485FA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F4EA00DD2216BF60006485FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F4EA00DF2216BF61006485FA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F4EA00E22216BF61006485FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F4EA00E42216BF61006485FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F4EA01222216EA61006485FA /* libGeographic.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libGeographic.a; sourceTree = "<group>"; };
+		F4EA01262216EADB006485FA /* LambertConformalConic.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = LambertConformalConic.hpp; sourceTree = "<group>"; };
+		F4EA01272216EADB006485FA /* MGRS.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = MGRS.hpp; sourceTree = "<group>"; };
+		F4EA01282216EADB006485FA /* LocalCartesian.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = LocalCartesian.hpp; sourceTree = "<group>"; };
+		F4EA01292216EADB006485FA /* GeodesicLine.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = GeodesicLine.hpp; sourceTree = "<group>"; };
+		F4EA012A2216EADB006485FA /* GravityCircle.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = GravityCircle.hpp; sourceTree = "<group>"; };
+		F4EA012B2216EADB006485FA /* UTMUPS.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = UTMUPS.hpp; sourceTree = "<group>"; };
+		F4EA012C2216EADB006485FA /* Ellipsoid.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Ellipsoid.hpp; sourceTree = "<group>"; };
+		F4EA012D2216EADB006485FA /* PolarStereographic.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = PolarStereographic.hpp; sourceTree = "<group>"; };
+		F4EA012E2216EADB006485FA /* AlbersEqualArea.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = AlbersEqualArea.hpp; sourceTree = "<group>"; };
+		F4EA012F2216EADB006485FA /* Utility.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Utility.hpp; sourceTree = "<group>"; };
+		F4EA01312216EADB006485FA /* MagneticModel.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = MagneticModel.hpp; sourceTree = "<group>"; };
+		F4EA01322216EADB006485FA /* SphericalHarmonic1.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = SphericalHarmonic1.hpp; sourceTree = "<group>"; };
+		F4EA01332216EADB006485FA /* TransverseMercator.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = TransverseMercator.hpp; sourceTree = "<group>"; };
+		F4EA01342216EADB006485FA /* TransverseMercatorExact.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = TransverseMercatorExact.hpp; sourceTree = "<group>"; };
+		F4EA01352216EADB006485FA /* Config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Config.h; sourceTree = "<group>"; };
+		F4EA01362216EADB006485FA /* SphericalHarmonic2.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = SphericalHarmonic2.hpp; sourceTree = "<group>"; };
+		F4EA01372216EADB006485FA /* Geoid.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Geoid.hpp; sourceTree = "<group>"; };
+		F4EA013C2216EADB006485FA /* Rhumb.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Rhumb.hpp; sourceTree = "<group>"; };
+		F4EA013D2216EADB006485FA /* SphericalHarmonic.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = SphericalHarmonic.hpp; sourceTree = "<group>"; };
+		F4EA013E2216EADB006485FA /* NormalGravity.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = NormalGravity.hpp; sourceTree = "<group>"; };
+		F4EA01412216EADB006485FA /* SphericalEngine.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = SphericalEngine.hpp; sourceTree = "<group>"; };
+		F4EA01422216EADB006485FA /* GeodesicExact.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = GeodesicExact.hpp; sourceTree = "<group>"; };
+		F4EA01432216EADB006485FA /* GARS.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = GARS.hpp; sourceTree = "<group>"; };
+		F4EA01442216EADB006485FA /* Geocentric.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Geocentric.hpp; sourceTree = "<group>"; };
+		F4EA01452216EADB006485FA /* Accumulator.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Accumulator.hpp; sourceTree = "<group>"; };
+		F4EA01462216EADB006485FA /* PolygonArea.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = PolygonArea.hpp; sourceTree = "<group>"; };
+		F4EA01472216EADB006485FA /* Math.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Math.hpp; sourceTree = "<group>"; };
+		F4EA01482216EADB006485FA /* Geodesic.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Geodesic.hpp; sourceTree = "<group>"; };
+		F4EA01492216EADB006485FA /* AzimuthalEquidistant.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = AzimuthalEquidistant.hpp; sourceTree = "<group>"; };
+		F4EA014A2216EADB006485FA /* Constants.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Constants.hpp; sourceTree = "<group>"; };
+		F4EA014B2216EADB006485FA /* OSGB.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = OSGB.hpp; sourceTree = "<group>"; };
+		F4EA014C2216EADB006485FA /* GeoCoords.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = GeoCoords.hpp; sourceTree = "<group>"; };
+		F4EA014E2216EADB006485FA /* CassiniSoldner.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = CassiniSoldner.hpp; sourceTree = "<group>"; };
+		F4EA014F2216EADB006485FA /* MagneticCircle.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = MagneticCircle.hpp; sourceTree = "<group>"; };
+		F4EA01502216EADB006485FA /* NearestNeighbor.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = NearestNeighbor.hpp; sourceTree = "<group>"; };
+		F4EA01512216EADB006485FA /* DMS.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = DMS.hpp; sourceTree = "<group>"; };
+		F4EA01522216EADB006485FA /* Georef.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Georef.hpp; sourceTree = "<group>"; };
+		F4EA01532216EADB006485FA /* Gnomonic.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Gnomonic.hpp; sourceTree = "<group>"; };
+		F4EA01542216EADB006485FA /* GravityModel.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = GravityModel.hpp; sourceTree = "<group>"; };
+		F4EA01552216EADB006485FA /* GeodesicLineExact.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = GeodesicLineExact.hpp; sourceTree = "<group>"; };
+		F4EA01562216EADB006485FA /* CircularEngine.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = CircularEngine.hpp; sourceTree = "<group>"; };
+		F4EA01572216EADB006485FA /* Geohash.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Geohash.hpp; sourceTree = "<group>"; };
+		F4EA01582216EADB006485FA /* EllipticFunction.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = EllipticFunction.hpp; sourceTree = "<group>"; };
+		F4EA01602216EBD0006485FA /* GetDistance.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = GetDistance.cpp; sourceTree = "<group>"; };
+		F4EA01612216EBD0006485FA /* GetDistance.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = GetDistance.hpp; sourceTree = "<group>"; };
+		F4EA01632216EC04006485FA /* DirectOne-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DirectOne-Bridging-Header.h"; sourceTree = "<group>"; };
+		F4EA01662216F3B0006485FA /* GetDistance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetDistance.swift; sourceTree = "<group>"; };
+		F74F1EB146662601766F4171 /* Pods-DirectOne.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DirectOne.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DirectOne/Pods-DirectOne.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F4EA00D22216BF60006485FA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4EA01232216EA61006485FA /* libGeographic.a in Frameworks */,
+				54DF285F82086DFB40E1D747 /* Pods_DirectOne.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		41E6AE1F2F534D7C472CDB50 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AD3B4AFE4D9E53421EEAD8BA /* Pods_DirectOne.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F43E97DB221B1B0E001B9EF9 /* ModelView */ = {
+			isa = PBXGroup;
+			children = (
+				F43E97DC221B1B20001B9EF9 /* UnitConverter.swift */,
+			);
+			path = ModelView;
+			sourceTree = "<group>";
+		};
+		F443BF86221C41F6007C0F5D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F4EA00D82216BF60006485FA /* AppDelegate.swift */,
+				F4EA00DA2216BF60006485FA /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F45C536322182020001C1152 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F4EA00DC2216BF60006485FA /* Main.storyboard */,
+				F4EA00DF2216BF61006485FA /* Assets.xcassets */,
+				F4EA00E12216BF61006485FA /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F45C536422182036001C1152 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F4EA01662216F3B0006485FA /* GetDistance.swift */,
+				F45C53652218257F001C1152 /* PlaceSearch.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F4EA00CC2216BF60006485FA = {
+			isa = PBXGroup;
+			children = (
+				F4EA00D72216BF60006485FA /* DirectOne */,
+				F4EA00D62216BF60006485FA /* Products */,
+				FEE8534C41BF3ABBC36E24E4 /* Pods */,
+				41E6AE1F2F534D7C472CDB50 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F4EA00D62216BF60006485FA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F4EA00D52216BF60006485FA /* DirectOne.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F4EA00D72216BF60006485FA /* DirectOne */ = {
+			isa = PBXGroup;
+			children = (
+				F443BF86221C41F6007C0F5D /* Controller */,
+				F43E97DB221B1B0E001B9EF9 /* ModelView */,
+				F45C536422182036001C1152 /* Model */,
+				F4EA01632216EC04006485FA /* DirectOne-Bridging-Header.h */,
+				F4EA01602216EBD0006485FA /* GetDistance.cpp */,
+				F4EA01612216EBD0006485FA /* GetDistance.hpp */,
+				F45C536322182020001C1152 /* View */,
+				F4EA00E42216BF61006485FA /* Info.plist */,
+				F4EA01212216EA46006485FA /* Lib */,
+			);
+			path = DirectOne;
+			sourceTree = "<group>";
+		};
+		F4EA01212216EA46006485FA /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+				F4EA01242216EA73006485FA /* includes */,
+				F4EA01222216EA61006485FA /* libGeographic.a */,
+			);
+			path = Lib;
+			sourceTree = "<group>";
+		};
+		F4EA01242216EA73006485FA /* includes */ = {
+			isa = PBXGroup;
+			children = (
+				F4EA01252216EADB006485FA /* GeographicLib */,
+			);
+			path = includes;
+			sourceTree = "<group>";
+		};
+		F4EA01252216EADB006485FA /* GeographicLib */ = {
+			isa = PBXGroup;
+			children = (
+				F4EA01262216EADB006485FA /* LambertConformalConic.hpp */,
+				F4EA01272216EADB006485FA /* MGRS.hpp */,
+				F4EA01282216EADB006485FA /* LocalCartesian.hpp */,
+				F4EA01292216EADB006485FA /* GeodesicLine.hpp */,
+				F4EA012A2216EADB006485FA /* GravityCircle.hpp */,
+				F4EA012B2216EADB006485FA /* UTMUPS.hpp */,
+				F4EA012C2216EADB006485FA /* Ellipsoid.hpp */,
+				F4EA012D2216EADB006485FA /* PolarStereographic.hpp */,
+				F4EA012E2216EADB006485FA /* AlbersEqualArea.hpp */,
+				F4EA012F2216EADB006485FA /* Utility.hpp */,
+				F4EA01312216EADB006485FA /* MagneticModel.hpp */,
+				F4EA01322216EADB006485FA /* SphericalHarmonic1.hpp */,
+				F4EA01332216EADB006485FA /* TransverseMercator.hpp */,
+				F4EA01342216EADB006485FA /* TransverseMercatorExact.hpp */,
+				F4EA01352216EADB006485FA /* Config.h */,
+				F4EA01362216EADB006485FA /* SphericalHarmonic2.hpp */,
+				F4EA01372216EADB006485FA /* Geoid.hpp */,
+				F4EA013C2216EADB006485FA /* Rhumb.hpp */,
+				F4EA013D2216EADB006485FA /* SphericalHarmonic.hpp */,
+				F4EA013E2216EADB006485FA /* NormalGravity.hpp */,
+				F4EA01412216EADB006485FA /* SphericalEngine.hpp */,
+				F4EA01422216EADB006485FA /* GeodesicExact.hpp */,
+				F4EA01432216EADB006485FA /* GARS.hpp */,
+				F4EA01442216EADB006485FA /* Geocentric.hpp */,
+				F4EA01452216EADB006485FA /* Accumulator.hpp */,
+				F4EA01462216EADB006485FA /* PolygonArea.hpp */,
+				F4EA01472216EADB006485FA /* Math.hpp */,
+				F4EA01482216EADB006485FA /* Geodesic.hpp */,
+				F4EA01492216EADB006485FA /* AzimuthalEquidistant.hpp */,
+				F4EA014A2216EADB006485FA /* Constants.hpp */,
+				F4EA014B2216EADB006485FA /* OSGB.hpp */,
+				F4EA014C2216EADB006485FA /* GeoCoords.hpp */,
+				F4EA014E2216EADB006485FA /* CassiniSoldner.hpp */,
+				F4EA014F2216EADB006485FA /* MagneticCircle.hpp */,
+				F4EA01502216EADB006485FA /* NearestNeighbor.hpp */,
+				F4EA01512216EADB006485FA /* DMS.hpp */,
+				F4EA01522216EADB006485FA /* Georef.hpp */,
+				F4EA01532216EADB006485FA /* Gnomonic.hpp */,
+				F4EA01542216EADB006485FA /* GravityModel.hpp */,
+				F4EA01552216EADB006485FA /* GeodesicLineExact.hpp */,
+				F4EA01562216EADB006485FA /* CircularEngine.hpp */,
+				F4EA01572216EADB006485FA /* Geohash.hpp */,
+				F4EA01582216EADB006485FA /* EllipticFunction.hpp */,
+			);
+			path = GeographicLib;
+			sourceTree = "<group>";
+		};
+		FEE8534C41BF3ABBC36E24E4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F74F1EB146662601766F4171 /* Pods-DirectOne.debug.xcconfig */,
+				A47DB8ADAE6B36022A638DB9 /* Pods-DirectOne.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F4EA00D42216BF60006485FA /* DirectOne */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F4EA00E72216BF61006485FA /* Build configuration list for PBXNativeTarget "DirectOne" */;
+			buildPhases = (
+				FC2572AAED251073E02085C2 /* [CP] Check Pods Manifest.lock */,
+				F4EA00D12216BF60006485FA /* Sources */,
+				F4EA00D22216BF60006485FA /* Frameworks */,
+				F4EA00D32216BF60006485FA /* Resources */,
+				77ADA97E74B35EB338FDCE44 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DirectOne;
+			productName = DirectOne;
+			productReference = F4EA00D52216BF60006485FA /* DirectOne.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F4EA00CD2216BF60006485FA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = Robert;
+				TargetAttributes = {
+					F4EA00D42216BF60006485FA = {
+						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 0940;
+					};
+				};
+			};
+			buildConfigurationList = F4EA00D02216BF60006485FA /* Build configuration list for PBXProject "DirectOne" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F4EA00CC2216BF60006485FA;
+			productRefGroup = F4EA00D62216BF60006485FA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F4EA00D42216BF60006485FA /* DirectOne */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F4EA00D32216BF60006485FA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4EA00E32216BF61006485FA /* LaunchScreen.storyboard in Resources */,
+				F4EA00E02216BF61006485FA /* Assets.xcassets in Resources */,
+				F4EA00DE2216BF60006485FA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		77ADA97E74B35EB338FDCE44 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-DirectOne/Pods-DirectOne-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/DropDown/DropDown.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DropDown.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DirectOne/Pods-DirectOne-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FC2572AAED251073E02085C2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DirectOne-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F4EA00D12216BF60006485FA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F43E97DD221B1B20001B9EF9 /* UnitConverter.swift in Sources */,
+				F4EA00DB2216BF60006485FA /* ViewController.swift in Sources */,
+				F4EA00D92216BF60006485FA /* AppDelegate.swift in Sources */,
+				F4EA01622216EBD0006485FA /* GetDistance.cpp in Sources */,
+				F45C53662218257F001C1152 /* PlaceSearch.swift in Sources */,
+				F4EA01672216F3B0006485FA /* GetDistance.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F4EA00DC2216BF60006485FA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F4EA00DD2216BF60006485FA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F4EA00E12216BF61006485FA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F4EA00E22216BF61006485FA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F4EA00E52216BF61006485FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				"HEADER_SEARCH_PATHS[arch=*]" = "DirectOne/Lib/includes/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				"LIBRARY_SEARCH_PATHS[arch=*]" = DirectOne/Lib;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F4EA00E62216BF61006485FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = "";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				"HEADER_SEARCH_PATHS[arch=*]" = "DirectOne/Lib/includes/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				"LIBRARY_SEARCH_PATHS[arch=*]" = DirectOne/Lib;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F4EA00E82216BF61006485FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F74F1EB146662601766F4171 /* Pods-DirectOne.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 255ADFRT4W;
+				INFOPLIST_FILE = DirectOne/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/DirectOne/Lib",
+				);
+				OTHER_LDFLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = ua.unit.rkoval.DirectOne;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "DirectOne/DirectOne-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F4EA00E92216BF61006485FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A47DB8ADAE6B36022A638DB9 /* Pods-DirectOne.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 255ADFRT4W;
+				INFOPLIST_FILE = DirectOne/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/DirectOne/Lib",
+				);
+				OTHER_LDFLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = ua.unit.rkoval.DirectOne;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "DirectOne/DirectOne-Bridging-Header.h";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F4EA00D02216BF60006485FA /* Build configuration list for PBXProject "DirectOne" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F4EA00E52216BF61006485FA /* Debug */,
+				F4EA00E62216BF61006485FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F4EA00E72216BF61006485FA /* Build configuration list for PBXNativeTarget "DirectOne" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F4EA00E82216BF61006485FA /* Debug */,
+				F4EA00E92216BF61006485FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F4EA00CD2216BF60006485FA /* Project object */;
+}
