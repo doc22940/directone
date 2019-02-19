@@ -104,12 +104,12 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		F43E97DB221B1B0E001B9EF9 /* ModelView */ = {
+		F43E97DB221B1B0E001B9EF9 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
 				F43E97DC221B1B20001B9EF9 /* UnitConverter.swift */,
 			);
-			path = ModelView;
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		F443BF86221C41F6007C0F5D /* Controller */ = {
@@ -162,7 +162,7 @@
 			isa = PBXGroup;
 			children = (
 				F443BF86221C41F6007C0F5D /* Controller */,
-				F43E97DB221B1B0E001B9EF9 /* ModelView */,
+				F43E97DB221B1B0E001B9EF9 /* ViewModel */,
 				F45C536422182036001C1152 /* Model */,
 				F4EA01632216EC04006485FA /* DirectOne-Bridging-Header.h */,
 				F4EA01602216EBD0006485FA /* GetDistance.cpp */,
